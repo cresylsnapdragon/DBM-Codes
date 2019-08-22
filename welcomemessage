@@ -1,0 +1,70 @@
+{
+  "name": "WelcomeMessage",
+  "temp": "member",
+  "event-type": "6",
+  "actions": [
+    {
+      "info": "1",
+      "find": "💖welcome",
+      "storage": "1",
+      "varName": "newmember",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "newmember",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "2",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channelName": "💖welcome",
+      "categoryID": "",
+      "topic": "",
+      "position": "",
+      "storage": "1",
+      "varName": "newmember",
+      "name": "Create Text Channel"
+    },
+    {
+      "title": "Welcome!",
+      "author": "",
+      "color": "#5A21B2",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "https://media1.giphy.com/media/l4JyOCNEfXvVYEqB2/giphy.gif?cid=790b7611f6d69cf97981f0ccc10ef8b5ffa18b5d88197f6a&rid=giphy.gif",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "message",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "message": "Hi there, ${tempVars(\"member\")}! ",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "channel": "5",
+      "varName2": "newmember",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "UVGGf"
+}

@@ -1,0 +1,118 @@
+{
+  "name": "ban",
+  "permissions": "BAN_MEMBERS",
+  "restriction": "0",
+  "actions": [
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```\nPlease mention one user in order to ban them!\n8=D!ban [@user] [reason]\n```",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "user",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "reason",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "reason": "${tempVars(\"user\")} was banned for; **${tempVars(\"reason\")}**",
+      "name": "Ban Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} banned ${tempVars(\"user\")}",
+      "storage": "1",
+      "varName2": "bannedmsgschannel",
+      "name": "Send Message"
+    },
+    {
+      "time": "2",
+      "measurement": "1",
+      "name": "Wait"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedmsgschannel",
+      "name": "Delete Message"
+    },
+    {
+      "info": "1",
+      "find": "modlog",
+      "storage": "1",
+      "varName": "moglogchanshit",
+      "name": "Find Channel"
+    },
+    {
+      "title": "Banned User",
+      "author": "ModShield",
+      "color": "#000000",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "bannedembed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "fieldName": "Staff",
+      "message": "${member}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "fieldName": "Member Banned",
+      "message": "${tempVars(\"user\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "fieldName": "Reason",
+      "message": "${tempVars(\"reason\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "bannedembed",
+      "channel": "5",
+      "varName2": "moglogchanshit",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "RPyYC"
+}

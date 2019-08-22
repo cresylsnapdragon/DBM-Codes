@@ -1,0 +1,21 @@
+{
+  "name": "setbotgame",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "4",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "They call it the \"Swanson\"! :meat_on_bone: ",
+      "storage": "0",
+      "varName2": "meat",
+      "name": "Send Message"
+    },
+    {
+      "gameName": "The Swanson",
+      "gameLink": "",
+      "name": "Set Bot Game"
+    }
+  ],
+  "_id": "mbyGT"
+}

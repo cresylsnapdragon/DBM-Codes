@@ -1,0 +1,66 @@
+{
+  "name": "warn",
+  "permissions": "MANAGE_NICKNAMES",
+  "restriction": "0",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "reason",
+      "name": "Store Command Params"
+    },
+    {
+      "title": "Warn",
+      "author": "",
+      "color": "00ec28",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "warn",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "warn",
+      "fieldName": "Warned User",
+      "message": "${mentionedUser}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "warn",
+      "fieldName": "Warned By",
+      "message": "${member}",
+      "inline": "0",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "warn",
+      "fieldName": "Reason",
+      "message": "${tempVars(\"reason\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "warn",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "warn",
+      "channel": "2",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "aeVtr"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ripmessage",
+  "temp": "member",
+  "event-type": "7",
+  "actions": [
+    {
+      "info": "0",
+      "find": "613995095414407180",
+      "storage": "1",
+      "varName": "ripmember",
+      "name": "Find Channel"
+    },
+    {
+      "channel": "5",
+      "varName": "ripmember",
+      "message": "**${tempVars(\"member\")} has left the server, sad day!**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "KnscL"
+}

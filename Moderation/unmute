@@ -1,0 +1,35 @@
+{
+  "name": "Unmute",
+  "permissions": "MUTE_MEMBERS",
+  "restriction": "1",
+  "actions": [
+    {
+      "condition": "1",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "```\nPlease mention one user in order to unmute them!\n!Unmute [@user]\n```",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "mute": "1",
+      "name": "Set Member Mute"
+    }
+  ],
+  "_id": "TaIIW"
+}

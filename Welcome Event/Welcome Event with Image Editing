@@ -75,7 +75,7 @@
       "y": "100",
       "font": "fonts/Asimov.fnt",
       "width": "",
-      "text": "${tempVars(\"count\")}",
+      "text": "${tempVars("count")}",
       "name": "Draw Text on Image"
     },
     {

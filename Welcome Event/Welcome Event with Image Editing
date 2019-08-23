@@ -83,7 +83,7 @@
       "varName": "image",
       "channel": "5",
       "varName2": "newmember",
-      "message": "Hi there, ${tempVars(\"member\")}! Please start by introducing yourself in the 😄introductions channel!",
+      "message": "Hi there, ${tempVars("member")}! Please start by introducing yourself in the 😄introductions channel!",
       "name": "Send Image"
     }
   ],

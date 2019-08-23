@@ -31,7 +31,7 @@
       "name": "Create Text Channel"
     },
     {
-      "url": "https://imgur.com/MIKyBvL.png",
+      "url": "https://imgur.com/uZdA5DM.png",
       "storage": "1",
       "varName": "image",
       "name": "Create Image"
@@ -75,7 +75,7 @@
       "y": "100",
       "font": "fonts/Asimov.fnt",
       "width": "",
-      "text": "${tempVars("count")}",
+      "text": "${tempVars(\"count\")}",
       "name": "Draw Text on Image"
     },
     {
@@ -83,8 +83,16 @@
       "varName": "image",
       "channel": "5",
       "varName2": "newmember",
-      "message": "Hi there, ${tempVars("member")}! Please start by introducing yourself in the 😄introductions channel!",
+      "message": "",
       "name": "Send Image"
+    },
+    {
+      "channel": "5",
+      "varName": "newmember",
+      "message": "Hi there, ${tempVars(\"member\")}! Please start by introducing yourself in the #😄introductions channel! If you need technical help, please go to corresponding channels:\n# 🤖discord-bot-help\n# 🐩rpg-maker-help\n# 🌀mix-it-up-help",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
     }
   ],
   "_id": "HDics"

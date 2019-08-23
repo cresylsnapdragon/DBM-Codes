@@ -8,7 +8,8 @@ Go to Edit Raw Data
 Copy and Paste Raw Data into DBM (this will automatically populate everything)
 
 # Special Notes
-With the welcome events, please watch my youtube tutorials https://www.youtube.com/cresylsnapdragon if you find yourself having problems. 
+With the welcome events, 
+please watch my youtube tutorials https://www.youtube.com/cresylsnapdragon if you find yourself having problems. 
 
 # Youtube tutorials
 Intial DBM Set Up https://youtu.be/dXmpak-Gev8

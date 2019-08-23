@@ -89,7 +89,7 @@
     {
       "channel": "5",
       "varName": "newmember",
-      "message": "Hi there, ${tempVars(\"member\")}! Please start by introducing yourself in the #😄introductions channel! If you need technical help, please go to corresponding channels:\n# 🤖discord-bot-help\n# 🐩rpg-maker-help\n# 🌀mix-it-up-help",
+      "message": "Hi there, ${tempVars(\"member\")}! Please start by introducing yourself in the #😄introductions channel!",
       "storage": "0",
       "varName2": "",
       "name": "Send Message"

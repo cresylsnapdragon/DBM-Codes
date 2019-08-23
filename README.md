@@ -17,6 +17,8 @@ Copy and Paste Raw Data into DBM (this will automatically populate everything)
 With the welcome events, 
 please watch my youtube tutorials https://www.youtube.com/cresylsnapdragon if you find yourself having problems. 
 
+For the background image (welcome event with image editing), the canvas size is 420 x 150
+
 # Youtube tutorials
 Intial DBM Set Up https://youtu.be/dXmpak-Gev8
 

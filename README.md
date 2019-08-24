@@ -31,3 +31,5 @@ Welcome Event (basic) https://youtu.be/cUloTEIdeEI
 
 Embedded Messages (basic) https://youtu.be/QA3Ey4a2G20
 
+Image Editing (basic) https://youtu.be/L9BlOGZpSzg
+

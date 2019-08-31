@@ -1,55 +1,109 @@
 {
-  "name": "askswanson",
+  "name": "8ball",
   "permissions": "NONE",
-  "restriction": "0",
+  "restriction": "1",
+  "_id": "fgJVD",
   "actions": [
     {
-      "channel": "0",
-      "varName": "",
-      "message": "${member} shook the Swanson!",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "time": "2",
-      "measurement": "1",
-      "name": "Wait"
-    },
-    {
       "storage": "1",
-      "varName": "grn-num",
+      "varName": "random",
       "min": "1",
-      "max": "20",
+      "max": "7",
       "name": "Generate Random Number"
     },
     {
+      "title": "8ball",
+      "author": "",
+      "color": "052253",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "http://www.freelogovectors.net/wp-content/uploads/2013/02/8_256x256-32.png",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
       "storage": "1",
-      "varName": "grn-num",
+      "varName": "message",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "random",
       "comparison": "1",
       "value": "1",
       "iftrue": "2",
-      "iftrueVal": "24",
+      "iftrueVal": "10",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
+      "varName": "random",
       "comparison": "1",
       "value": "2",
       "iftrue": "2",
-      "iftrueVal": "26",
+      "iftrueVal": "13",
       "iffalse": "0",
       "iffalseVal": "",
       "name": "Check Variable"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
+      "varName": "random",
       "comparison": "1",
       "value": "3",
+      "iftrue": "2",
+      "iftrueVal": "16",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "random",
+      "comparison": "1",
+      "value": "4",
+      "iftrue": "2",
+      "iftrueVal": "19",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "random",
+      "comparison": "1",
+      "value": "5",
+      "iftrue": "2",
+      "iftrueVal": "22",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "random",
+      "comparison": "1",
+      "value": "6",
+      "iftrue": "2",
+      "iftrueVal": "25",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "random",
+      "comparison": "1",
+      "value": "7",
       "iftrue": "2",
       "iftrueVal": "28",
       "iffalse": "0",
@@ -58,397 +112,115 @@
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "4",
-      "iftrue": "2",
-      "iftrueVal": "30",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**Ask again later, ${member}**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "5",
-      "iftrue": "2",
-      "iftrueVal": "32",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "6",
-      "iftrue": "2",
-      "iftrueVal": "34",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**The answer that you are looking for cannot be found here! ${member}**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "7",
-      "iftrue": "2",
-      "iftrueVal": "36",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "8",
-      "iftrue": "2",
-      "iftrueVal": "38",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**As I see it, yes ${member}!**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "9",
-      "iftrue": "2",
-      "iftrueVal": "40",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "10",
-      "iftrue": "2",
-      "iftrueVal": "42",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**Don't count on it, ${member}!**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "11",
-      "iftrue": "2",
-      "iftrueVal": "44",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "12",
-      "iftrue": "2",
-      "iftrueVal": "46",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**It is a no from me, ${member}!**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "13",
-      "iftrue": "2",
-      "iftrueVal": "48",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "14",
-      "iftrue": "2",
-      "iftrueVal": "50",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**Doubt it, ${member}!**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "15",
-      "iftrue": "2",
-      "iftrueVal": "52",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "16",
-      "iftrue": "2",
-      "iftrueVal": "54",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
+      "varName": "message",
+      "message": "**It is certain, ${member}!**",
+      "name": "Set Embed Description"
     },
     {
       "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "17",
-      "iftrue": "2",
-      "iftrueVal": "56",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "18",
-      "iftrue": "2",
-      "iftrueVal": "58",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "19",
-      "iftrue": "2",
-      "iftrueVal": "60",
-      "iffalse": "0",
-      "iffalseVal": "",
-      "name": "Check Variable"
-    },
-    {
-      "storage": "1",
-      "varName": "grn-num",
-      "comparison": "1",
-      "value": "20",
-      "iftrue": "0",
-      "iftrueVal": "",
-      "iffalse": "1",
-      "iffalseVal": "",
-      "name": "Check Variable"
-    },
-    {
+      "varName": "message",
       "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson Says - **I'd wish you the best of luck but I believe luck is a concept created by the weak to explain their failures.**, ${member}.",
-      "storage": "0",
       "varName2": "",
-      "name": "Send Message"
+      "name": "Send Embed Message"
     },
     {
       "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **I'm not interested in caring about people.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **So you talked to Tammy? What's it like to stare into the eye of Satan's butthole?**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **When people get too chummy with me I like to call them by the wrong name to let them know I don't really care about them.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **If any of you need anything at all, too bad. Deal with your problems yourselves, like adults.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **The government is a greedy piglet that suckles on a taxpayer’s teat until they have sore, chapped nipples.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Just give me all the bacon and eggs you have. Wait…wait. I worry what you just heard was: Give me a lot of bacon and eggs. What I said was: Give me all the bacon and eggs you have. Do you understand?**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Sting like a bee. Do not float like a butterfly. That's ridiculous.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Give 100%. 110% is impossible. Only idiots recommend that.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Are you going to tell a man that he can’t fart in his own car?**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Put some alcohol in your mouth to block with words from coming out.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **I like saying ‘No,’ it lowers their enthusiasm.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **I regret nothing. The end.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Turkey can never beat cow.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **There is only one bad word: taxes.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Friends: one to three is sufficient.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Never half-ass two things. Whole-ass one thing.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **Keep your tears in your eyes where they belong.**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
-    },
-    {
-      "name": "End Action Sequence"
-    },
-    {
-      "channel": "0",
-      "varName": "",
-      "message": "Ron Swanson says - **OK, everyone: shut up! And look at me!**, ${member}.",
-      "storage": "0",
-      "varName2": "",
-      "name": "Send Message"
     }
-  ],
-  "_id": "mYomb"
+  ]
 }

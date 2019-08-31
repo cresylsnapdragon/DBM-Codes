@@ -1,0 +1,34 @@
+{
+  "name": "rank",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "POscK",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "exp",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "memberexp",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "rank",
+      "defaultVal": "1",
+      "storage": "1",
+      "varName2": "memberrank",
+      "name": "Store Member Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Your current rank is ${tempVars(\"memberrank\")}! You currently have ${tempVars(\"memberexp\")} experience points. ",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ]
+}

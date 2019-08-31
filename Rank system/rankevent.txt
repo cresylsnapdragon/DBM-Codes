@@ -1,0 +1,199 @@
+{
+  "name": "ranksystem",
+  "temp": "expgain",
+  "event-type": "2",
+  "_id": "Xlpbi",
+  "actions": [
+    {
+      "info": "1",
+      "find": "??rank",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Find Channel"
+    },
+    {
+      "storage": "1",
+      "varName": "channel",
+      "comparison": "0",
+      "value": "",
+      "iftrue": "2",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "channelName": "??rank",
+      "categoryID": "",
+      "topic": "",
+      "position": "",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Create Text Channel"
+    },
+    {
+      "message": "1",
+      "varName": "expgain",
+      "info": "3",
+      "storage": "1",
+      "varName2": "member",
+      "name": "Store Message Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "exp",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "rank",
+      "defaultVal": "1",
+      "storage": "1",
+      "varName2": "userrank",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "exp",
+      "comparison": "4",
+      "value": "tempVars(\"userrank\")*10",
+      "iftrue": "0",
+      "iftrueVal": "5",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "dataName": "rank",
+      "changeType": "1",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "CONGRATS! YOU'VE RANKED UP!",
+      "author": "",
+      "color": "00a044",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "https://media1.giphy.com/media/whhRkilADNaOk/giphy.gif?cid=790b76112c2a3fe414f53acf2b859baa2b7af757ddebd4f8&rid=giphy.gif",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "message",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "message": "**Hooray! ${tempVars(\"member\")} has ranked up to froglet level ${tempVars(\"userrank\")}! RIBBET!** ",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "message",
+      "channel": "5",
+      "varName2": "channel",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "userrank",
+      "comparison": "1",
+      "value": "10",
+      "iftrue": "2",
+      "iftrueVal": "15",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "userrank",
+      "comparison": "1",
+      "value": "30",
+      "iftrue": "2",
+      "iftrueVal": "18",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "userrank",
+      "comparison": "1",
+      "value": "100",
+      "iftrue": "2",
+      "iftrueVal": "22",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "info": "1",
+      "find": "Polywag",
+      "storage": "1",
+      "varName": "role1",
+      "name": "Find Role"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "role1",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "find": "??Toad",
+      "storage": "1",
+      "varName": "role2",
+      "name": "Find Role"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "role2",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "find": "??Cockatrice",
+      "storage": "1",
+      "varName": "role3",
+      "name": "Find Role"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "role3",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+   {
+      "storage": "1",
+      "varName": "userrank",
+      "comparison": "1",
+      "value": "10",
+      "iftrue": "2",
+      "iftrueVal": "15",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "userrank",
+      "comparison": "1",
+      "value": "30",
+      "iftrue": "2",
+      "iftrueVal": "18",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "userrank",
+      "comparison": "1",
+      "value": "100",
+      "iftrue": "2",
+      "iftrueVal": "22",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "info": "1",
+      "find": "Polywag",
+      "storage": "1",
+      "varName": "role1",
+      "name": "Find Role"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "role1",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "find": "??Toad",
+      "storage": "1",
+      "varName": "role2",
+      "name": "Find Role"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "role2",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "1",
+      "find": "??Cockatrice",
+      "storage": "1",
+      "varName": "role3",
+      "name": "Find Role"
+    },
+    {
+      "member": "2",
+      "varName2": "member",
+      "role": "3",
+      "varName": "role3",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    }
